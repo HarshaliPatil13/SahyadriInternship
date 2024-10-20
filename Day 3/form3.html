@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            background-image: url("formimg.png");
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-color: rgb(233, 230, 230);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+    <form autocomplete="on">
+    <fieldset>
+    <label for="fname">First name</label><br>
+    <input type="text" id="fname" name="fname" value="John" readonly><br>
+    <label for="fname">Last name</label><br>
+    <input type="text" id="lname" name="lname" value="Doe" readonly><br>
+
+    <label for="fname">First name</label><br>
+    <input type="text" id="fname" name="fname" value="John" disabled><br>
+
+    <label for="username">Username: </label>
+    <input type="text" id="username" name="username" required>
+    <input type="submit" value="submit"><br>
+
+    <label for="pin">PIN: </label><br>
+    <input type="text" id="pin" name="pin" size="50"><br>
+
+    <label for="fname">First name: </label><br>
+    <input type="text" id="fname" name="fname" maxlength=5 size="50"> <br>
+    <label for="fname">Last name: </label><br>
+    <input type="text" id="fname" name="fname" minlength=5 size="50">
+    <input type="submit" value="submit"><br>
+
+    <label for="datemin">Enter date after 2000-01-01: </label>
+    <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+    <label for="quantity">Quantityt (between  1and 5): </label>
+    <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+
+    <label for="firstName">First Name:</label>
+    <input name="firstName" id="firstName" type="text" autofocus ><br><br>
+    <label for="email" id="email" name="email" >Email </label>
+    <input type="email" name="email">
+    <input type="submit" value="submit"> <br><br>
+
+    <label for="files">Select files</label>
+    <input type="file" id="files" name="files" multiple accept=".pdf,.png">
+    </fieldset>
+    </form>
+    
+</body>
+</html>

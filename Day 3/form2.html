@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: #bef5f5;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <center><h1>Registration Form</h1></center><br>
+    <div>
+    <form>
+        <fieldset>
+            <legend>Personalia: </legend>
+        <label for="firstname">First Name: &emsp;</label> 
+        <input type="text" name="firstname" placeholder="Enter first name" required><br><br>
+        <label for="firstname">Last Name:  &emsp;        </label> 
+        <input type="text" name="lastname" placeholder="Enter last name" required><br><br>
+        <label for="firstname">Email:  &emsp;        </label> 
+        <input type="email" name="emailaddress" placeholder="Enter email address" required><br><br>
+        <label for="password">Password:  &emsp;        </label> 
+        <input type="password" name="password" required><br><br>
+        <label for="gender">Gender: &emsp;         </label> 
+        <input name="input" type="radio" name="gender" value="male"/>
+        <label>Male</label>
+        <input name="input" type="radio"  name="gender" value="female"/>
+        <label>Female</label><br><br>
+        <label for="age">Age:   &emsp;       </label> 
+        <input type="number" name="age" required><br><br>
+
+        <label for="country">Country:&emsp; </label>
+        <select name="country" >
+            <option>Select </option>
+            <option value="IN"> INDIA </option>
+            <option value="US"> USA</option>
+            <option value="CH"> CHINA</option>
+            <option value="JP"> JAPAN</option>
+        </select><br><br>
+
+        <label for="message" >Message  &emsp;</label>
+        <textarea name="message" rows="10" cols="30">
+        The cat was playing in garden
+        </textarea><br><br>
+
+        <button type="button" onclick="alert('HI THIS IS HARSHALI')">Click Me</button><br><br>
+
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="edge">
+            <option value="chrome">
+            <option value="safari">
+            <option value="edge">
+            </datalist>
+        
+       
+
+
+
+
+
+
+        </fieldset>
+
+    </form>
+    </div>
+</body>
+</html>
